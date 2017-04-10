@@ -1,0 +1,142 @@
+/* reset
+ --------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* layout
+ --------------------------*/
+
+@media only screen and (min-width: 761px), print {
+    #header {
+        padding-top : 15px;
+    }
+}
+
+@media only screen and (max-width: 760px), print {
+    #header h1 {
+        padding-top : 10px;
+    }
+}
+
+
+@media only screen and (min-width: 761px), print {
+    #header h1 {
+        width : 180px;
+        height: 40px;
+        line-height : 30px;
+        margin-right : 180px;
+    }
+}
+@media only screen and (max-width: 760px), print {
+    #header h1 {
+        width : 180px;
+        height: 40px;
+        line-height : 30px;
+    }
+}
+
+
+@media only screen and (min-width: 761px), print {
+    .p-header__margin {
+        width :100%;
+        margin-left : -180px;
+        margin-right : -400px;
+        height: 5px;
+        line-height : 30px;
+    }
+}
+@media only screen and (max-width: 760px), print {
+    .p-header__margin {
+    }
+}
+
+@media only screen and (min-width: 761px), print {
+    #gnav {
+        margin-left : 400px;
+    }
+    #gnav ul {
+        display : flex;
+    }
+
+    #gnav li {
+        display :inline-block;
+        text-align :center;
+        width : 100px;
+        height : 30px;
+        line-height : 30px;
+    }
+}
+@media only screen and (max-width: 760px), print {
+    #gnav ul{
+        display : block;
+    }
+}
+
+#footer {
+    height : 50px;
+    line-height : 50px;
+    font-size : 12px;
+    text-align :center;
+}
+
+/* utility
+ --------------------------*/
+
+@media only screen and (min-width: 761px), print {
+    .u-only__sp {
+        display : none;
+    }
+}
+@media only screen and (max-width: 760px), print {
+    .u-only__pc {
+        display : none;
+    }
+}
+
+.u-vflex {
+    display: flex;
+}
+
+@media only screen and (min-width: 761px), print {
+    .u-vflex__pc {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 761px), print {
+    .u-boxed-inner {
+        width : 1200px;
+        margin : 0 auto;
+    }
+}
+@media only screen and (max-width: 760px), print {
+    .u-boxed-inner {
+        width : 100%;
+        margin : 0 auto;
+    }
+}
+
+@media only screen and (min-width: 761px), print {
+    .u-fill-width {
+        min-width : 1200px;
+        width : 100%;
+    }
+}
+@media only screen and (max-width: 760px), print {
+    .u-fill-width {
+        width : 100%;
+    }
+}
+
+.u-float-r {
+    float: right;
+}
+.u-clr {
+    clear: both;
+}
