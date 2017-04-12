@@ -1,18 +1,96 @@
 /* Project
  --------------------------*/
 
+
 @media only screen and (min-width: 761px), print {
     #main-visual {
-        height : 600px;
-        background: #000000;
+        background : #000;
+        height : 500px;
+    }
+    #main-visual h2 {
+        height: 48px;
+        position: relative;
+        z-index : 3;
+        top : 50%;
+        left : 15%;
+        color : #fff;
+        font-size : 48px;
+        text-shadow : 0px 0px 3px #000;
+    }
+    .p-main-visual__inner {
+        overflow : hidden;
+        width : 100%;
+        height : 100%;
+    }
+    
+    .p-main-visual__filter {
+        z-index : 2;
+        width : 100%;
+        height : 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+25,0.4+33,0.1+39,0+48,0+62,0.1+70,0.4+77,0.4+77,0.4+83,1+88 */
+        background: -moz-linear-gradient(left,  rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 10%,  rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.4) 45%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 10%,  rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.4) 45%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 10%,  rgba(0,0,0,0.7) 45%, rgba(0,0,0,0.4) 45%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+    .p-main-visual__img {
+        z-index : 1;
+        width : 100%;
+        height : 100%;
+    }
+    .p-main-visual__img1 {
+        margin-top: -48px;
+        animation-name: kf-main-visual1;
+        background: url('../image/main1.jpg');
+        background-repeat: no-repeat;
+        background-size : 100%;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    .p-main-visual__img2 {
+        margin-top: -500px;
+        animation-name: kf-main-visual2;
+        background: url('../image/main2.jpg');
+        background-repeat: no-repeat;
+        background-size : 100%;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    .p-main-visual__img3 {
+        margin-top: -500px;
+        animation-name: kf-main-visual3;
+        background: url('../image/main3.jpg');
+        background-repeat: no-repeat;
+        background-size : 100%;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes kf-main-visual1 {
+        0% { background-position: 50px -30px; opacity: 1; }
+        34% { background-position: 5px -30px; opacity: 1; }
+        35% { background-position: 2px -30px; opacity: 1; }
+        66% { background-position: 55px -30px; opacity: 0; }
+        100% { background-position: 50px -30px; opacity: 1; }
+    }
+    @keyframes kf-main-visual2 {
+        0% { background-position: 50px -30px; opacity: 0; }
+        30% { background-position: 50px -30px; opacity: 0; }
+        33% { background-position: 50px -30px; opacity: 1; }
+        65% { background-position: 5px -30px; opacity: 1; }
+        70% { background-position: 2px -30px; opacity: 0; }
+        100% { background-position: 2px -30px; opacity: 0; }
+    }
+    @keyframes kf-main-visual3 {
+        0% { background-position: 50px -30px; opacity: 0; }
+        63% { background-position: 50px -30px; opacity: 0; }
+        66% { background-position: 50px -30px; opacity: 1; }
+        96% { background-position: 5px -30px; opacity: 1; }
+        100% { background-position: 2px -30px; opacity: 0; }
     }
 }
 
 @media only screen and (max-width: 760px), print {
     #main-visual {
-        width : 100%;
-        height : 40vw;
-        background: #000000;
+        display: none;
     }
 }
 
@@ -29,15 +107,19 @@
 
 @media only screen and (min-width: 761px), print {
     .p-news__header {
-        font-size : 26px;
-        margin-bottom : 15px;
+        font-size : 16px;
+        margin-bottom : 10px;
+        height: 30px;
+        line-height: 30px;
+        text-align : left;
+        width : 75px;
     }
 
     .p-news__date {
         height : 30px;
         line-height : 30px;
-        width : 150px;
-        text-align : center;
+        width : 120px;
+        text-align : left;
     }
 
     .p-news__content {
@@ -53,6 +135,7 @@
         font-size : 26px;
         margin-left : 3vw;
         margin-bottom : 15px;
+        padding-bottom: 2px;
     }
 
     .p-news__date {
@@ -74,48 +157,47 @@
 
 @media only screen and (min-width: 761px), print {
     #soul {
-        color :#ffffff;
-        background: #000000;
+        color :#fff;
+        background: #A84A4F;
         padding : 15px 30px;
+        height: 300px;
+    }
+    .p-soul__visual {
+        font-size : 68px;
+        width : 420px;
+        height: 250px;
+        line-height :250px;
+        text-align : center;
     }
     .p-soul__inner {
-        width : 400px;
-        padding-left : 720px;
-    }
-    .p-soul__header {
-        display :inline-block;
-        width : 400px;
-        font-size : 24px;
-        height: 32px;
-        line-height: 32px;
-        margin-left : 30px;
-        margin-bottom : 15px;
+        width : 700px;
+        height: 100%;
     }
     .p-soul__message {
+        margin-top : 30px;
+        letter-spacing : 1px;
         text-indent:1em;
-        width : 400px;
-        font-size : 15px;
-        line-height: 24px;
+        width : 700px;
+        font-size : 18px;
+        line-height: 30px;
         margin-left : 60px;
+        padding-right : 30px;
     }
 }
 @media only screen and (max-width: 760px), print {
     #soul {
         color :#ffffff;
-        background: #000000;
+        background: #A84A4F;
         padding : 15px 30px;
     }
     .p-soul__inner {
         width : 100%;
     }
-    .p-soul__header {
-        display :inline-block;
-        width : 85%;
-        font-size : 24px;
-        height: 32px;
-        line-height: 32px;
-        margin-left : 10%;
-        margin-bottom : 15px;
+    .p-soul__visual {
+        font-size : 7vw;
+        text-align: center;
+        margin-bottom : 2vw;
+        width : 100%;
     }
     .p-soul__message {
         font-size : 15px;
@@ -132,36 +214,42 @@
     display : flex;
     -webkit-flex-wrap: wrap; /* Safari */
     flex-wrap:         wrap;
-    padding : 0px -25px;
+    margin : 0px;
 }
 
 @media only screen and (min-width: 761px), print {
     .p-commercial__item {
-        width : 248px;
-        height: 130px;
-        padding : 5px;
-        margin : 10px 25px;
+        width : 262px;
+        height: 140px;
+        margin : 20px 25px;
+    }
+    .p-commercial__item:nth-child(4n+1) {
+        margin-left : 0;
+    }
+    .p-commercial__item:nth-child(4n+4) {
+        margin-right : 0;
     }
 }
+
 @media only screen and (max-width: 760px), print {
     .p-commercial__item {
-        width : 248px;
+        width : 260px;
         height: 130px;
         min-width : 248px;
         padding : 5px;
-        margin : 0px auto;
+        margin : 20px auto;
     }
 }
 
 .p-commercial__a {
     display : inline-block;
-    background-color : #ff9900;
-    width : 238px;
-    height: 120px;
+    background-color : #ffffff;
+    width : 260px;
+    height: 130px;
 }
 .p-commercial__img {
-    width : 238px;
-    height: 120px;
+        width : 260px;
+    height: 130px;
 }
 
 /* コピペ

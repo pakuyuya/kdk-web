@@ -8,6 +8,16 @@ li {
     list-style-type: none;
 }
 
+body {
+    font-family: 'GenEiGohicN','Meiryo UI';
+}
+
+/* font-face
+ --------------------------*/
+@font-face {
+    font-family: 'GenEiGothicN';
+    src: url('../vendor/GenEiGothicN/GenEiGothicN-Regular.otf') type('openfont');
+}
 
 /* layout
  --------------------------*/
@@ -27,7 +37,7 @@ li {
 
 @media only screen and (min-width: 761px), print {
     #header h1 {
-        width : 180px;
+        width : 240px;
         height: 40px;
         line-height : 30px;
         margin-right : 180px;
@@ -35,7 +45,7 @@ li {
 }
 @media only screen and (max-width: 760px), print {
     #header h1 {
-        width : 180px;
+        width : 240px;
         height: 40px;
         line-height : 30px;
     }
@@ -54,6 +64,15 @@ li {
 @media only screen and (max-width: 760px), print {
     .p-header__margin {
     }
+}
+
+#gnav a {
+    color : #383838;
+    text-decoration : none;
+}
+
+#gnav a:hover {
+    text-decoration : underline;
 }
 
 @media only screen and (min-width: 761px), print {
@@ -139,4 +158,11 @@ li {
 }
 .u-clr {
     clear: both;
+}
+
+
+.u-minhr {
+    width : 40px;
+    margin : 20px auto;
+    border : solid 5px #5B5C76;
 }
